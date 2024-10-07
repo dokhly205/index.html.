@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            height: 50px;
+            align-items: center;
+            position: fixed;
+        }
+
+        .left-red, .right-red {
+            background-color: red;
+            width: 265px;
+            height: 48px;
+        }
+
+        .left-olive, .right-olive {
+            background-color: olive;
+            width: 100px;
+            height: 48px;
+        }
+
+        .menu-item {
+            background-color: #808080;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-weight: normal;
+            text-decoration: none;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+
+        .menu-item:hover {
+            background-color: #6D6D6D;
+        }
+
+        .menu-item + .menu-item {
+            margin-left: 0px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #6D6D6D;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+
+        .menu-item:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #696868;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="left-red"></div>
+        <div class="left-olive"></div>
+
+        <div class="menu-item">
+            Sản phẩm
+            <div class="dropdown-content">
+                <a href="#">Áo khoác</a>
+                <a href="#">Túi xách</a>
+                <a href="#">Đầm công sở</a>
+            </div>
+        </div>
+        
+        <div class="menu-item">Bộ sưu tập</div>
+        <div class="menu-item">Showroom</div>
+        <div class="menu-item">Độc quyền tháng 10</div>
+        
+        <div class="right-olive"></div>
+        <div class="right-red"></div>
+    </div>
+
+    <div style="padding: 20px;">
+        <p> ĐỖ THỊ KHÁNH LY - 223001661</p>
+        <p> ĐỖ THỊ KHÁNH LY - 223001661</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Delectus soluta vel nisi.
+        Officiis expedita sit accusamus excepturi quos quae alias, eum dolor rerum eligendi deserunt ex nesciunt.
+        Quos praesentium esse perferendis sequi quae sapiente quaerat officiis
+        culpa a, quidem voluptates autem, inventore tempora. Minus atque
+        maxime sapiente? Eveniet rerum iusto odit necessitatibus ullam! Aut
+        illo quis dignissimos animi distinctio, dicta, omnis molestias dolore
+        dolorum tempore numquam? Dolor neque sit iste blanditiis, doloribus
+        consectetur autem ratione architecto recusandae nisi sed. Vitae,
+        deserunt esse! Animi, dolore. Cum, reiciendis? Fuga voluptatibus velit
+        consectetur voluptas explicabo eius ipsum modi eum veniam? Sequi,
+        blanditiis? Consequuntur in, recusandae possimus quasi necessitatibus
+        eius quis sunt iste vero aspernatur deleniti neque magnam similique
+        aliquid. Doloribus aspernatur fugit amet, cumque assumenda eum aliquam
+        maiores eius repellat omnis, ipsam, velit ducimus consequuntur
+        molestias quaerat accusantium harum sit nihil? Reprehenderit deserunt
+        commodi illum necessitatibus veniam quasi aspernatur hic consectetur
+        dolor voluptatum atque, ipsam eveniet iure quis eaque magnam dolores
+        assumenda enim voluptates officia minima dolorem fugiat. Odit enim
+        totam maiores ipsum itaque doloribus facere officiis nulla unde
+        dignissimos, quisquam voluptatibus qui quasi voluptatum ullam dolor ut
+        hic eligendi. Ullam debitis tempora nam laboriosam suscipit sequi
+        aperiam amet, enim perferendis quaerat, aliquid corrupti et molestiae
+        harum obcaecati aliquam assumenda dolorem repudiandae accusantium eum
+        eos necessitatibus. Vitae nostrum nesciunt harum cumque adipisci nam
+        ipsa, facere iste odit voluptatibus nulla porro qui praesentium nisi
+        tenetur aut minus minima ducimus numquam ut repellat. Harum, nam
+        accusamus cum omnis velit quisquam ipsam animi quod itaque officiis
+        consequuntur sint. Repellat sapiente dolor accusamus id aliquam magnam
+        ducimus? Aperiam qui doloribus aut optio illo explicabo nam esse
+        distinctio quasi. Error eius adipisci fugiat eos fugit temporibus
+        nesciunt, laboriosam dolor aliquid modi asperiores voluptate dolorum
+        enim, harum quod repudiandae! Aliquam atque, animi, recusandae
+        possimus pariatur dolores corporis doloremque repellat, delectus saepe
+        architecto alias natus odio. Laudantium, molestiae reiciendis velit
+        quas harum necessitatibus dolor ex dolore, porro qui, mollitia culpa
+        beatae illum quia. Tenetur quaerat ut sequi? Doloribus aspernatur sunt
+        suscipit maiores ea, ratione consectetur impedit dolorem nulla, odit
+        nam unde a perferendis, itaque quis modi magni officiis nobis maxime
+        doloremque! Consequuntur illum consequatur similique commodi et
+        voluptas eius. Ullam quidem dolores vel! Enim ratione, incidunt
+        commodi laudantium delectus illum. Dolore aliquid placeat sint quod
+        quia corporis pariatur praesentium ipsum nobis. Excepturi fugit
+        similique deleniti dolorum vero sit aut repudiandae eius, consequuntur
+        distinctio velit, iste dolores doloribus. Numquam aliquam, aliquid in
+        quae ex placeat maiores, ipsam, maxime eveniet explicabo quidem rem
+        eius consectetur dolor. Perspiciatis quam libero, itaque voluptatibus
+        facilis exercitationem, culpa quis laborum rem fugiat delectus,
+        architecto quibusdam error. Numquam accusamus omnis rem placeat iure
+        quia dolore quos. Consequatur est earum possimus quam reiciendis
+        aperiam aspernatur autem? Ea earum ut officia molestias repudiandae
+        odit minima expedita enim cumque, nemo doloribus fuga inventore
+        provident nisi eaque unde est quam iusto quis, repellat mollitia
+        corrupti tempore! Sunt officia consequatur eligendi exercitationem
+        saepe blanditiis aliquid hic deleniti fuga cumque repellendus illo
+        suscipit nihil omnis repudiandae, quidem enim, assumenda explicabo
+        alias, nisi magnam laboriosam tenetur id? Perferendis a perspiciatis
+        est amet.Aliquam atque, animi, recusandae
+        possimus pariatur dolores corporis doloremque repellat, delectus saepe
+        architecto alias natus odio. Laudantium, molestiae reiciendis velit
+        quas harum necessitatibus dolor ex dolore, porro qui, mollitia culpa
+        beatae illum quia. Tenetur quaerat ut sequi? Doloribus aspernatur sunt
+        suscipit maiores ea, ratione consectetur impedit dolorem nulla, odit
+        nam unde a perferendis, itaque quis modi magni officiis nobis maxime
+        doloremque! Consequuntur illum consequatur similique commodi et
+        voluptas eius. Ullam quidem dolores vel! Enim ratione, incidunt
+        commodi laudantium delectus illum. Dolore aliquid placeat sint quod
+        quia corporis pariatur praesentium ipsum nobis. Excepturi fugit
+        similique deleniti dolorum vero sit aut repudiandae eius, consequuntur
+        distinctio velit, iste dolores doloribus. Aliquam atque, animi, recusandae
+        possimus pariatur dolores corporis doloremque repellat, delectus saepe
+        architecto alias natus odio. Laudantium, molestiae reiciendis velit
+        quas harum necessitatibus dolor ex dolore, porro qui, mollitia culpa
+        beatae illum quia. Tenetur quaerat ut sequi? Doloribus aspernatur sunt
+        suscipit maiores ea, ratione consectetur impedit dolorem nulla, odit
+        nam unde a perferendis, itaque quis modi magni officiis nobis maxime
+        doloremque! Consequuntur illum consequatur similique commodi et
+        voluptas eius. Ullam quidem dolores vel! Enim ratione, incidunt
+        commodi laudantium delectus illum. Dolore aliquid placeat sint quod
+        quia corporis pariatur praesentium ipsum nobis. Excepturi fugit
+        similique deleniti dolorum vero sit aut repudiandae eius, consequuntur
+        distinctio velit, iste dolores doloribus.
+        hitecto recusandae nisi sed. Vitae,
+        deserunt esse! Animi, dolore. Cum, reiciendis? Fuga voluptatibus velit
+        consectetur voluptas explicabo eius ipsum modi eum veniam? Sequi,
+        blanditiis? Consequuntur in, recusandae possimus quasi necessitatibus
+        eius quis sunt iste vero aspernatur deleniti neque magnam similique
+        aliquid. Doloribus aspernatur fugit amet, cumque assumenda eum aliquam
+        maiores eius repellat omnis, ipsam, velit ducimus consequuntur
+        molestias quaerat accusantium harum sit nihil? Reprehenderit deserunt
+        commodi illum necessitatibus veniam quasi aspernatur hic consectetur
+        dolor voluptatum atque, ipsam eveniet iure quis eaque magnam dolores
+        assumenda enim voluptates officia minima dolorem fugiat.
+        Veniam repudiandae recusandae ex, eum aut quod laudantium
+        facilis esse temporibus?
+           </p>
+    </div>
+
+</body>
+</html>
